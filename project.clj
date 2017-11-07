@@ -47,4 +47,5 @@
 
   :main ^:skip-aot clojurejl.core
   :target-path "target/%s"
+  :repl-options {:init-ns user}
   :profiles {:uberjar {:aot :all}})
