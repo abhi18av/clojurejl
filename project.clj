@@ -14,7 +14,7 @@
 ;; This is for traversing the nested clojure data structure
                  [com.rpl/specter "1.0.3"]
                  [prismatic/plumbing "0.5.4"]
-
+				 [datawalk "0.1.5-SNAPSHOT"]
 ;; a better dev experience utility belt
                  [im.chit/hara "2.5.10"]
                  [im.chit/lucid "1.3.13"]
@@ -33,6 +33,7 @@
 
 ;; MiniKanren
                  [org.clojure/core.logic "0.8.11"]
+
 
 ;; all fine till this comment
 
