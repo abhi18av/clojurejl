@@ -4,37 +4,32 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [
-  [org.clojure/clojure "1.9.0-beta4"] 
-  [instaparse "1.4.7"]
 
-                            ;; This is for traversing the nested clojure data structure
-  [com.rpl/specter "1.0.3"]
-                 [prismatic/plumbing "0.5.4"]
+[org.clojure/clojure "1.9.0-beta4"] 
+[instaparse "1.4.7"]
 
-                 ;; a better dev experience utility belt
-                 [im.chit/hara "2.5.10"]
-                 [im.chit/lucid "1.3.13"]
+;; This is for traversing the nested clojure data structure
+[com.rpl/specter "1.0.3"]
+[prismatic/plumbing "0.5.4"]
+;; a better dev experience utility belt
+[im.chit/hara "2.5.10"]
+[im.chit/lucid "1.3.13"]
 
-                            ;; Shell library
-                            [me.raynes/conch "0.8.0"]
+;; Shell library
+[me.raynes/conch "0.8.0"]
 
+; Quickcheck
+[org.clojure/test.check "0.10.0-alpha2"]
 
-                            ; Quickcheck
-                            [org.clojure/test.check "0.10.0-alpha2"]
+;; Asynchronous stuff
+[org.clojure/core.async "0.3.443"]
 
+;; Pattern matching in clojure
+[org.clojure/core.match "0.3.0-alpha5"]
 
-                            ;; Asynchronous stuff
-                            [org.clojure/core.async "0.3.443"]
+;; MiniKanren
+[org.clojure/core.logic "0.8.11"] ]
 
-                            ;; Pattern matching in clojure
-                            [org.clojure/core.match "0.3.0-alpha5"]
-
-                            ;; MiniKanren
-                            [org.clojure/core.logic "0.8.11"]
-
- 
-
-  ]
   :main ^:skip-aot clojurejl.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}})
