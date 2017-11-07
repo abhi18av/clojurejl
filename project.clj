@@ -28,7 +28,22 @@
 [org.clojure/core.match "0.3.0-alpha5"]
 
 ;; MiniKanren
-[org.clojure/core.logic "0.8.11"] ]
+[org.clojure/core.logic "0.8.11"]
+
+
+;; all fine till this comment
+          ;; Clojure reader in clojure
+          [org.clojure/tools.reader "1.0.5"]
+                            ;; Clojure AST to EDN
+                            [org.clojure/tools.analyzer "0.6.9"]
+
+
+                            ;; Concrete implementation of tools.analyzer
+                            [org.clojure/tools.analyzer.jvm "0.7.0"]
+
+
+
+ ]
 
   :main ^:skip-aot clojurejl.core
   :target-path "target/%s"
